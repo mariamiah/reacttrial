@@ -1,18 +1,20 @@
 language: node_js
 node_js:
   - "stable"
+addons: code_climate
+env:
+  global:
+    - CC_TEST_REPORTER_ID=12f9fc241012c3e088e081a9cb3a548de56b810f0503be57591a6f4a16c99904
 cache:
   directories:
   - node_modules
+before_script:
+  - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
+  - chmod +x ./cc-test-reporter
+  - ./cc-test-reporter before-build
 script:
   - npm test -- --coverage # Include coverage when running tests
   - npm run build
 after_script: # Upload coverage reports 
   - COVERALLS_REPO_TOKEN=$coveralls_repo_token npm run coveralls
-deploy:
-  provider: pages
-  skip_cleanup: true
-  github_token: $github_token
-  local_dir: build
-  on:
-    branch: master
+  - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT

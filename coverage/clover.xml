@@ -1,6 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1549808226330" clover="3.2.0">
-  <project timestamp="1549808226330" name="All files">
-    <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0" elements="0" coveredelements="0" complexity="0" loc="0" ncloc="0" packages="0" files="0" classes="0"/>
+<coverage generated="1549817739412" clover="3.2.0">
+  <project timestamp="1549817739412" name="All files">
+    <metrics statements="10" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="8" coveredmethods="4" elements="18" coveredelements="12" complexity="0" loc="10" ncloc="10" packages="1" files="3" classes="3"/>
+    <file name="App.js" path="/Users/mariah/Desktop/reactfinal/src/components/App.js">
+      <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <line num="9" count="1" type="stmt"/>
+    </file>
+    <file name="Nav.js" path="/Users/mariah/Desktop/reactfinal/src/components/Nav.js">
+      <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <line num="6" count="2" type="stmt"/>
+    </file>
+    <file name="counter.js" path="/Users/mariah/Desktop/reactfinal/src/components/counter.js">
+      <metrics statements="8" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="2"/>
+      <line num="6" count="2" type="stmt"/>
+      <line num="7" count="2" type="stmt"/>
+      <line num="10" count="2" type="stmt"/>
+      <line num="11" count="2" type="stmt"/>
+      <line num="14" count="0" type="stmt"/>
+      <line num="19" count="0" type="stmt"/>
+      <line num="25" count="2" type="stmt"/>
+      <line num="26" count="2" type="stmt"/>
+    </file>
   </project>
 </coverage>

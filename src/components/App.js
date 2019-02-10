@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
 import Counter from './counter';
-import '../style.scss';
+import Nav from  './Nav'
+
 
 
 class App extends Component {
   render() {
     return (
             <div>
+                <Nav />
                <div className="card">
                 <h5 className="card-header info-color white-text text-center py-4">
                 <strong>Sign up</strong>
