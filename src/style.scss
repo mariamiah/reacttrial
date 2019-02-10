@@ -1,0 +1,17 @@
+$colour: rgba(#3f51b5, 1);
+$label-color-1: rgba(#3f51b5, 1);
+$color-alert: #b71c1c;
+$width: 40%;
+$centerfloat: center;
+
+
+.card{
+  color:$colour;
+}
+.form-control{
+    width: $width;
+    float: $centerfloat;
+}
+.btn-floating btn-git btn-sm{
+    width:$width;
+}
