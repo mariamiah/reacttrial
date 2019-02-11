@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import Counter from './counter';
-import Nav from  './Nav'
+import Nav from  './Nav';
+import { Link, Route, BrowserRouter as Router  } from 'react-router-dom';
+import '../style.scss';
+
 
 
 
