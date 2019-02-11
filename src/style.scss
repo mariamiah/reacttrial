@@ -3,7 +3,9 @@ $label-color-1: rgba(#3f51b5, 1);
 $color-alert: #b71c1c;
 $width: 40%;
 $centerfloat: center;
-
+$btn-font-weight:bold;
+$bootstrap-sass-asset-helper: true;
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
 
 .card{
   color:$colour;

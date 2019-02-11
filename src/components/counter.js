@@ -1,6 +1,14 @@
 import React from 'react';
 
 
+export const Increment =(prevState)=>({
+        counter: prevState +1,
+
+});
+export const Decrement = (prevState) =>({
+        counter : prevState -1,
+
+});
 class Counter extends React.Component{
     constructor(props){
         super(props);
@@ -11,15 +19,10 @@ class Counter extends React.Component{
         this.decrementCounter = this.decrementCounter.bind(this);
     }
     incrementCounter(){
-        this.setState((prevState)=>({
-            counter : prevState.counter + 1
-        }));
+        this.setState(Increment);
     }
     decrementCounter(){
-        this.setState((prevState)=>({
-            counter: prevState.counter -1
-        }));
-
+        this.setState(Decrement);
     }
     render(){
         const { counter }=this.state;

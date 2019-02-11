@@ -2,9 +2,10 @@ import React, { Component } from 'react';
 import Counter from './counter';
 import Nav from  './Nav';
 import { Link, Route, BrowserRouter as Router  } from 'react-router-dom';
+
+import { Button , Alert,  UncontrolledAlert,Input } from 'react-bootstrap';
+
 import '../style.scss';
-
-
 
 
 class App extends Component {
@@ -20,8 +21,8 @@ class App extends Component {
                 <form className="text-center">
                 <div className="form-row">
                 <div className="col">
-                    <div className="md-form">
-                        <input type="text" id="materialRegisterFormFirstName" className="form-control" />
+                    <div >
+                    <input type="email" id="materialRegisterFormLastName" className="form-control" />
                         <label>First name</label>
                     </div>
                 </div>
@@ -54,7 +55,7 @@ class App extends Component {
                 <input type="checkbox" className="form-check-input" id="materialRegisterFormNewsletter" />
                 <label className="form-check-label">Subscribe to our newsletter</label>
             </div>
-            <button className="btn btn-outline-info btn-rounded btn-block my-4 waves-effect z-depth-0" type="submit">Sign in</button>
+            <Button>SignUp</Button>
             <p>or sign up with:</p>
             <a type="button" className="btn-floating btn-fb btn-sm">
                 <i className="fab fa-facebook-f"></i>

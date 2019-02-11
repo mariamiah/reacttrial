@@ -5,3 +5,225 @@ exports[`render a label 1`] = `
   First name
 </label>
 `;
+
+exports[`should match the snapshot 1`] = `
+<div>
+  <div>
+    <header>
+      <li>
+        <a
+          href="/home"
+          onClick={[Function]}
+        >
+          Home
+        </a>
+      </li>
+      <li>
+        <a
+          href="/about"
+          onClick={[Function]}
+        >
+          About
+        </a>
+      </li>
+      <li>
+        <a
+          href="/articles"
+          onClick={[Function]}
+        >
+          Articles
+        </a>
+      </li>
+    </header>
+  </div>
+  <div
+    className="card"
+  >
+    <h5
+      className="card-header info-color white-text text-center py-4"
+    >
+      <strong>
+        Sign up
+      </strong>
+    </h5>
+    <div
+      className="card-body px-lg-5 pt-0"
+    >
+      <form
+        className="text-center"
+      >
+        <div
+          className="form-row"
+        >
+          <div
+            className="col"
+          >
+            <div>
+              <input
+                className="form-control"
+                id="materialRegisterFormLastName"
+                type="email"
+              />
+              <label>
+                First name
+              </label>
+            </div>
+          </div>
+          <div
+            className="col"
+          >
+            <div
+              className="md-form"
+            >
+              <input
+                className="form-control"
+                id="materialRegisterFormLastName"
+                type="email"
+              />
+              <label>
+                Last name
+              </label>
+            </div>
+          </div>
+        </div>
+        <div
+          className="md-form mt-0"
+        >
+          <input
+            className="form-control"
+            id="materialRegisterFormEmail"
+            type="email"
+          />
+          <label>
+            E-mail
+          </label>
+        </div>
+        <div
+          className="md-form"
+        >
+          <input
+            aria-describedby="materialRegisterFormPasswordHelpBlock"
+            className="form-control"
+            id="materialRegisterFormPassword"
+            type="password"
+          />
+          <label>
+            Password
+          </label>
+          <small
+            className="form-text text-muted mb-4"
+            id="materialRegisterFormPasswordHelpBlock"
+          >
+            At least 8 characters and 1 digit
+          </small>
+        </div>
+        <div
+          className="md-form"
+        >
+          <input
+            aria-describedby="materialRegisterFormPhoneHelpBlock"
+            className="form-control"
+            id="materialRegisterFormPhone"
+            type="password"
+          />
+          <label>
+            Phone number
+          </label>
+          <small
+            className="form-text text-muted mb-4"
+            id="materialRegisterFormPhoneHelpBlock"
+          >
+            Optional - for two step authentication
+          </small>
+        </div>
+        <div
+          className="form-check"
+        >
+          <input
+            className="form-check-input"
+            id="materialRegisterFormNewsletter"
+            type="checkbox"
+          />
+          <label
+            className="form-check-label"
+          >
+            Subscribe to our newsletter
+          </label>
+        </div>
+        <button
+          className="btn btn-primary"
+          disabled={false}
+          type="button"
+        >
+          SignUp
+        </button>
+        <p>
+          or sign up with:
+        </p>
+        <a
+          className="btn-floating btn-fb btn-sm"
+          type="button"
+        >
+          <i
+            className="fab fa-facebook-f"
+          />
+        </a>
+        <a
+          className="btn-floating btn-tw btn-sm"
+          type="button"
+        >
+          <i
+            className="fab fa-twitter"
+          />
+        </a>
+        <a
+          className="btn-floating btn-li btn-sm"
+          type="button"
+        >
+          <i
+            className="fab fa-linkedin-in"
+          />
+        </a>
+        <a
+          className="btn-floating btn-git btn-sm"
+          type="button"
+        >
+          <i
+            className="fab fa-github"
+          />
+        </a>
+        <p>
+          By clicking
+          <em>
+            Sign up
+          </em>
+           you agree to our
+          <a
+            href=""
+            target="_blank"
+          >
+            terms of service
+          </a>
+        </p>
+         
+      </form>
+    </div>
+  </div>
+  <div>
+    <h1>
+      My Counter
+    </h1>
+    0
+    <button
+      onClick={[Function]}
+    >
+      Increment
+    </button>
+    <button
+      onClick={[Function]}
+    >
+      Decrement
+    </button>
+  </div>
+</div>
+`;

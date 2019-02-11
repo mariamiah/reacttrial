@@ -1,14 +1,15 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import Nav from '../Nav';
-import { Link } from 'react-router-dom';
-import { shallow, mount } from 'enzyme';
+import { MemoryRouter } from 'react-router';
+import renderer from 'react-test-renderer';
 
 
-it('renders without crashing', ()=>{
-    
-    let wrapper = document.createElement('div');
-    ReactDOM.render(<Nav />, wrapper)
-    
 
-})
+test('should render without crushing', () => {
+    const component = renderer.create(
+      <MemoryRouter>
+        <Nav />
+      </MemoryRouter>
+    ).toJSON();
+    expect(component).toMatchSnapshot();
+  });
